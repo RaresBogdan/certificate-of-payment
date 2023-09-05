@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Form F - CERTIFICATE OF PAYMENT - (Section 115)</title>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/css/pikaday.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/signature_pad/1.5.3/signature_pad.min.js"></script>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <button class="closepopupbutton" id="closePopup">Close</button>
+        </div>
+    </div>
+    <form onsubmit="validateForm()">
+        <div class="certificate-header">
+            <p id="form-b-heading">Form F</p>
+            
+            <strong>
+               <h2>CERTIFICATE OF PAYMENT</h2>
+            </strong>
+            <p>(Section 115)</p>
+         </div>
+         <p>The Owners, Strata Plan <input type="text" name="Registration number field" required> certify under section 115 of the Strata Property Act that the owner of the strata lot described as</p>
+         <p>[parcel identifier] [legal description of strata lot]</p>
+
+         <ul class="indent-list">
+            <li>does not owe money to the strata corporation, or</li>
+            <li>does owe money but</li>
+            <ul class="indent-list">
+                (i) the money claimed by the strata corporation has been paid into court, or to the strata corporation in trust, under section 114 of the Strata Property Act, or</li>
+                <p></p>(ii) arrangements satisfactory to the strata corporation have been made to pay the money owing.</li>
+            </ul>
+        </ul>
+    
+
+         <div class="date-picker-container">
+            <p></p>
+            <p></p>
+            <label for="certificate_date">Date:</label>
+            <input type="text" id="certificate_date" name="Date" class="date-input" placeholder="Select a date" required>
+         </div>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/pikaday.min.js"></script>
+         <p></p>
+         <p>Signature of Council Member:
+         <P class="signature-line">
+         <p>________________________________</p>
+         </P>
+         <!-- <div class="signature-container">
+            <label for="signature">
+               <p></p>
+            </label>
+            <canvas id="signature" class="signature-pad" width="300" height="150"></canvas>
+            <button id="clearSignature" class="clear-btn">Clear</button>
+            </div> -->
+         Signature of Second Council Member (not required if council consists of only one member):
+         <P class="signature-line">
+         <p>________________________________</p>
+         </P>
+         <!-- <div class="signature-container">
+            <label for="signatureSecond"></label>
+            <canvas id="signatureSecond" class="signature-pad" width="300" height="150"></canvas>
+            <button id="clearSignatureSecond" class="clear-btn">Clear</button>
+            </div> -->
+         <strong>OR</strong>
+         <p>Signature of Strata Manager, if authorized by the strata corporation:
+         <P class="signature-line">
+         <p>________________________________</p>
+         </P>
+         <p>* Section 115 (2) of the Act provides that a Certificate of Payment is current for the purposes of section 256 of the Act for a period of 60 days from the date it is issued.</p>
+
+
+         <!-- <div class="signature-container">
+            <label for="signatureThird"></label>
+            <canvas id="signatureThird" class="signature-pad" width="300" height="150"></canvas>
+            <button id="clearSignatureThird" class="clear-btn">Clear</button>
+            </div> -->
+    </form>
+    <button class="download-btn">Download as PDF</button>
+    <script src="main.js"></script>
+   </body>
+</html>
+   
